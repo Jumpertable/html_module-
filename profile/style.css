@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
-body {
+html, body {
   background: peachpuff;
   font-family: "Oleo Script Swash Caps";
-  align-items: center;
+  
 }
-header {
+header 
   .topper {
     margin: auto;
     background-color: rgb(246, 176, 146);
@@ -93,24 +93,32 @@ header {
     text-align: center;
     display: block;
   }
-}
-footer{
+
+footer
+    .bommot {
+        position: relative;
+       
+        background-color: rgb(255,251,240);
+        width: 100%;
+        height: 11em;
+        border-radius: 25px;
+        border: 5px solid rgb(249, 160, 121);
+    
+        font-size: 40%;
+      }
     a:link {
-        color: red;
+        color: rgb(255,147,147);
       }
       
-      /* visited link */
       a:visited {
-        color: green;
+        color: rgb(255,132,132);
       }
       
-      /* mouse over link */
       a:hover {
-        color: hotpink;
+        color: rgb(255,117,117);
       }
       
-      /* selected link */
       a:active {
-        color: blue;
+        color: rgb(255,102,102);
       }
-}
+
