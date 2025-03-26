@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+body {
+  background: peachpuff;
+  font-family: "Oleo Script Swash Caps";
+  align-items: center;
+}
+header {
+  .topper {
+    margin: auto;
+    background-color: rgb(246, 176, 146);
+    width: 100%;
+    height: 4em;
+    border-radius: 25px;
+    border: 5px solid rgb(249, 160, 121);
+
+    text-align: center;
+    font-size: 250%;
+  }
+  .tab {
+    overflow: hidden;
+  }
+  .tab button {
+    background-color: rgb(246, 196, 146);
+    outline: none;
+    cursor: pointer;
+    padding: 4px 6px 5px;
+    transition: 0.3s;
+    font-size: 14px;
+    width: 30%;
+  }
+  .tab button:hover {
+    background-color: rgb(245, 173, 101);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .tab button.active {
+    background-color: rgb(246, 161, 146);
+  }
+  .tabcontent {
+    display: none;
+    border-radius: 5px;
+    border: 5px solid rgb(249, 160, 121);
+    padding-left: 115px;
+
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .pfp {
+    width: 125;
+    padding-left: 120px;
+  }
+
+  #border {
+    border: 5px dotted rgb(245, 137, 137);
+    border-radius: 10%;
+    height: 115px;
+    width: 350px;
+    padding: 10px;
+  }
+
+  .sec {
+    float: right;
+    border: 5px dotted rgb(245, 137, 137);
+    border-radius: 10%;
+    padding: 11px;
+  }
+  .row {
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .column {
+    box-sizing: border-box;
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .art {
+    margin: auto;
+    width: 50%;
+  }
+
+  p.ants {
+    display: none;
+    background-color: rgb(255,157,139);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    padding: 2px;
+  }
+  div:hover p.ants {
+    text-align: center;
+    display: block;
+  }
+}
+footer{
+    a:link {
+        color: red;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+      
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+}

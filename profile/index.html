@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css"
+    
+  </head>
+  <body>
+
+    <header>
+      <div class="topper">
+        About Me
+        <br />
+        <button type="button" onclick="alert('Gyarados')">Search</button>
+        <input type="text" placeholder="Whatcha finding?" style="font-size: 15px;">
+        
+        <div class="tab">
+            <button class="tablinks" onclick="pfp(event, 'PFP')">My Profile</button>
+            <button class="tablinks" onclick="pfp(event, 'ART')">My Art Gallery</button>
+          </div>
+          
+          <div id="PFP" class="tabcontent">
+            
+           
+          
+            <h3 style="padding-left: 105px;">Charlotte Hand</h3>
+            <img class="pfp"
+          src="Profile.png"
+          alt="Stardew Me"
+          <br />
+          <aside class="sec">
+            Favourite Movies/Shows:
+            <ol>
+                <li>The Cook, the Thief, His Wife & Her Lover</li>
+                <li>Everything Everywhere All at Once</li>
+                <li>Hannibal</li>
+            </ol>
+
+            Favourite Foods:
+            <ol>
+                <li>Mama's Lasagne</li>
+                <li>Passion Fruit</li>
+                <li>Coconut and coconut by products</li>
+            </ol>
+          </aside>
+          <aside class="sec">            
+                Loves:
+                <ul>
+                    <li>（づ￣3￣）づ╭❤️～My boyfriend</li>
+                    <li>Cats</li>
+                    <li>Watching great movies</li>
+                </ul>
+    
+                Dislikes:
+                <ul>
+                    <li>Art blocks</li>
+                    <li>People who don't think critically</li>
+                    <li>Feeling sicker</li>
+                </ul>
+              </aside>
+             
+            <p id="border">Howdy, my name is Charlotte. I'm a first-year student from PSU figuring things out. Interested in art, always curious about the world, and finding inspiration along the way.</p>
+             </div>
+
+         
+          
+          <div id="ART" class="tabcontent">
+            <h3>My Art Gallery</h3>
+            <div class="row">
+  <div class="column">
+    <div><img class="art"
+          src="Cranes in the Tall Grass..jpg"
+          alt="Cranes"
+          <pre>
+            <p class="ants">
+                Cranes in the Tall Grass.
+        </pre>
+    </div>
+          
+
+          <hr>
+
+          <div><img class="art"
+          src="Dreaming of Snow in a Heatwave..jpg"
+          alt="Dreaming"
+          <pre>
+            <p class="ants">
+                Dreaming of Snow in a Heatwave.
+        </pre>
+    </div>
+
+          <hr>
+
+          <div><img class="art"
+          src="Pets emote.png"
+          alt="Pets"
+          <pre>
+            <p class="ants">
+                Pets emote using Pixilart.
+        </pre>
+    </div>
+
+          <hr>
+
+          <div><img class="art"
+          src="Reminiscence of our Summer Home..jpg"
+          alt="Reminiscence"
+          <pre>
+            <p class="ants">
+                Reminiscence of our Summer Home. A piece for my dad.
+        </pre>
+    </div>
+
+          <hr>
+
+          <div><img class="art"
+          src="Silver Salmon..jpg"
+          alt="Salmon."
+          <pre>
+            <p class="ants">
+                Silver Salmon. Apart of the Salmon and Trout series.
+        </pre>
+    </div>
+
+          <hr>
+
+          <div><img class="art"
+          src="The Vibe I Bring to the Compound..jpg"
+          alt="The Vibe"
+          <pre>
+            <p class="ants">
+                The Vibe I Bring to the Compound. Apart of the Goldie Oldie series. 
+        </pre>
+    </div>
+          </div>
+      </div>
+      
+    
+    <main>main</main>
+    <footer>My Links
+        <p><b><a href="https://www.instagram.com/meat.claws/" target="_blank">Instagram</a></b></p>
+    </footer>
+    <script>
+        function pfp(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+  </body>
+</html>
