@@ -1,0 +1,163 @@
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+ExtraCondensed:wght@800&display=swap" rel="stylesheet">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  grid-template-columns: 70px 50px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2fr 1fr;
+}
+
+.container {
+  display: grid;
+
+  grid-template-columns: 200px 100px;
+  height: 90vh;
+  width: 120vh;
+
+  gap: 0.5em;
+}
+
+.background {
+  position: center;
+  size: cover;
+  height: 120vh;
+  width: 120vh;
+}
+
+@font-face {
+  font-family: "FuturaExtraBold";
+  src: url("path-to-your-font/FuturaExtraBold.woff2") format("woff2"),
+    url("path-to-your-font/FuturaExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.ikea-logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-family: "Noto Sans ExtraCondensed", sans-serif;
+  font-weight: 800;
+  font-size: 750px;
+  color: #ffc72c;
+  padding: 5px 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #000;
+}
+
+#copy {
+  padding-top: 250px;
+  font-size: 0.2em;
+  font-weight: 100;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.row1 {
+  display: grid;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: aliceblue;
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 1px 1px 0 #000;
+}
+
+#down {
+  display: grid;
+  position: absolute;
+  bottom: 10em;
+  left: 16%;
+  font-size: 3.2em;
+  font-weight: 900;
+  color: aliceblue;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.line1 {
+  display: grid;
+  position: absolute;
+  border-radius: 60px;
+  grid-template-columns: 1fr 1fr;
+  font-size: 45px;
+  width: 20em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    #ffd700 5px,
+    rgba(235, 233, 196, 0.776) 50%
+  );
+  height: 90px;
+  left: 15%;
+  padding: 10px 80px 10px 10px;
+  text-shadow: 1px 1px 0 #000;
+  bottom: 8em;
+}
+
+.l2 {
+  background-color: #ffd700;
+  text-shadow: 1px 1px 0 #000;
+  border-radius: 60px;
+  color: aliceblue;
+  border: none;
+  padding: 12px;
+  width: 40%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.l2:hover {
+  background-color: #9e7807;
+}
+
+.r2 {
+  color: aliceblue;
+  text-align: center;
+  padding: 12px;
+}
+
+.container2 {
+  color: aliceblue;
+  display: grid;
+  grid-template-rows: minmax(100px, auto);
+  gap: 10px;
+  max-height: 100vh;
+  padding-top: 10px;
+  overflow-y: auto;
+}
+
+.box{
+  position: relative;
+            width: 100%;
+            left: -9em;
+            top: 30em;
+}
+
+.container2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+
+  
+}
+
+.text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+
+}
