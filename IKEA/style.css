@@ -1,10 +1,7 @@
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+ExtraCondensed:wght@800&display=swap" rel="stylesheet">
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  grid-template-columns: 70px 50px;
 }
 
 body {
@@ -15,19 +12,16 @@ body {
 
 .container {
   display: grid;
-
   grid-template-columns: 200px 100px;
-  height: 90vh;
+  height: 100vh;
   width: 120vh;
-
-  gap: 0.5em;
 }
 
 .background {
   position: center;
-  size: cover;
+  background-position: cover;
   height: 120vh;
-  width: 120vh;
+  width: 125vh;
 }
 
 @font-face {
@@ -60,26 +54,12 @@ body {
 .row1 {
   display: grid;
   position: absolute;
-  top: 90%;
-  left: 30%;
-  transform: translate(-50%);
+  transform: translate(60%, 700%);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: aliceblue;
-  text-align: center;
   font-size: 30px;
   text-shadow: 1px 1px 0 #000;
   white-space: nowrap;
-}
-
-#down {
-  display: grid;
-  position: absolute;
-  bottom: -1em;
-  left: 16%;
-  font-size: 3.2em;
-  font-weight: 900;
-  color: aliceblue;
-  text-shadow: 1px 1px 0 #000;
 }
 
 .line1 {
@@ -87,42 +67,38 @@ body {
   position: absolute;
   border-radius: 60px;
   grid-template-columns: 1fr 1fr;
-  font-size: 35px;
-  width: 8.3em;
-  height: 40px;
+  width: 20em;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   background: linear-gradient(
     to right,
     #ffd700 5px,
     rgba(235, 233, 196, 0.776) 50%
-  ); 
-  left: 15%;
+  );
   padding: 10px 80px 10px 10px;
   text-shadow: 1px 1px 0 #000;
-  bottom: -4em;
+  transform: translate(65%, 900%);
 }
 
-.l2 {
+button {
   background-color: #ffd700;
   text-shadow: 1px 1px 0 #000;
   border-radius: 60px;
   color: aliceblue;
   border: none;
   padding: 12px;
-  width: 50%;
+  width: 70%;
   height: 100%;
-  text-align: center;
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
 }
 
-.l2:hover {
+button:hover {
   background-color: #9e7807;
 }
 
-.r2 {
+.line1 span {
   color: aliceblue;
   text-align: center;
   padding: 12px;
@@ -133,104 +109,80 @@ body {
   color: aliceblue;
   display: grid;
   grid-template-rows: minmax(100px, auto);
-  gap: 10px;
+  gap: 9px;
   max-height: 100vh;
-  padding-top: 10px;
   justify-content: end;
 }
 
 .box {
   position: relative;
-  width: 87%;
-  left: -9em;
-  top: 1em;
-  text-align: right;
+  display: grid;
+  padding: 1em 1em auto;
   object-fit: cover;
 }
 
-.container2 img {
+.box img {
   width: 100%;
-  height: auto;
-  border-radius: 20px;
-  margin-left: 10em;
-  object-fit: cover;
-  display: block;
-  overflow: hidden;
+  border-radius: 1em;
+  height: 12.3em;
 }
 
-.text {
+.box span {
   position: absolute;
-  top: 10px;
-  right: 120px;
-  font-size: 14px;
-  font-weight: bold;
+  top: 1.2em;
+  left: 1em;
+  font-size: 1em;
+  font-weight: 600;
   text-shadow: 1px 1px 0 #000;
-  text-align: right;
+  padding: 5px 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   body {
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
   }
+
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    height: auto;
+    height: 100%;
     width: 100%;
     gap: 1em;
     justify-items: center;
-    position: relative;
   }
 
   .background {
-    height: 100vh;
-    width: 90%;
+    height: 115%;
+    width: 100%;
     background-size: cover;
     background-position: center;
   }
 
   .ikea-logo {
     margin-top: -6em;
-    font-size: 80px;
-    text-align: center;
+    font-size: 100px;
   }
 
   .row1 {
     position: static;
-    font-size: 20px;
+    font-size: 30px;
+    transform: translate(0.1em, -11em);
     text-align: center;
-    transform: none;
-    margin-top: -9em;
   }
 
-  #down {
-    font-size: 2.2em;
-    margin-bottom: 4em;
-    margin-left: 1em;
+  button:hover {
+    background-color: #e08b45;
   }
 
-  section {
-    position: absolute;
-    margin-bottom: 4em;
-  }
-
-  .line1{
-width: 60%;
+  .line1 {
+    transform: translate(0em, 23.9em);
   }
 
   .container2 {
+    grid-row: 2 / span 4;
     display: grid;
-    flex-direction: column;
-    
-    gap: 2em;
-    justify-content: center;
-    justify-items: center;
-    padding-left: 3em;
-  }
-
-  .container2 img {    
-    width: 16.5em; 
+    grid-template-rows: repeat(4, 200px);
   }
 
   .text {
