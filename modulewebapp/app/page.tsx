@@ -9,6 +9,11 @@ export default function modulewebapp() {
     <p>
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus maiores deleniti recusandae quisquam, soluta deserunt reprehenderit sunt inventore vel possimus?
     </p>
+    <section>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, enim!
+      </p>
+    </section>
   </div>)
 
 }
