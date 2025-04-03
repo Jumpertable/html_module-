@@ -1,52 +1,28 @@
-import Image from 'next/image'
-import { Bungee_Tint } from "next/font/google";
+export default function modulewebapp() {
+  return (
+    <div className="grid place-items-center min-h-screen bg-white">
+      
+      <div className="border-2 border-black rounded bg-white w-full   max-w-lg pt-10 p-4 grid">
 
-const bungee = Bungee_Tint({ 
-  subsets: ["latin"],
-  weight: "400",
-});
+        <div className="relative border-2 border-green-300 rounded bg-green-400 text-gray-900 text-center py-9 w-full h-80 grid place-items-center">
 
-export default function modulewebapp (){
-  return (<div>
-  <h1 className={`${bungee.className} "font-bold m-2 p-2"`}>Hello World!!</h1>
+          <div className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 border-2 border-gray-900 rounded bg-blue-300 text-2xl font-bold w-40 h-12 grid place-items-center">
+            Banner
+          </div>
+          <button className="absolute top-0 right-0 w-8 h-8 text-center bg-gray-300 drop-shadow-lg border-2 rounded-sm hover:bg-orange-500 active:bg-red-500 transition">x</button>
+          <div className="absolute right-110 w-12 h-22 bg-white rounded-r-full"></div>
+          <div className="absolute top-64 left-91 w-28 h-19 bg-white rounded-l-full"></div>
 
-    
-    <div className=' w-[60%] border rounded border-blue-300 m-auto p-4 
-    grid 
-    grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4'>
-            
-      <Image
-            className="mb-4"
-            src="https://plus.unsplash.com/premium_photo-1669018131211-5283d80e7104?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            width={250}
-            height={150}
-            alt="Picture of the author"
-          />
-    
-          <Image
-            className="mb-4"
-            src="https://images.unsplash.com/photo-1742201835840-1325b7546403?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            width={250}
-            height={150}
-            alt="Picture of the author"
-          />
-        <p className=' border border-amber-200 w-50 mb-4 p-2 rounded bg-cyan-300 text-gray-900'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quo debitis 
-          magni eius repudiandae veniam, eaque est, velit, nulla ducimus molestias? 
-          Laudantium sunt at itaque!
-        </p> 
-        <p className=' border border-green-300 w-2/3 mb-4 p-2 rounded bg-purple-300 text-gray-900'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quo debitis 
-          magni eius repudiandae veniam, eaque est, velit, nulla ducimus molestias? 
-          Laudantium sunt at itaque!
-        </p> 
-        <p className=' border border-amber-500 w-3/3 mb-4 p-2 rounded bg-amber-100 text-gray-900'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quo debitis 
-          magni eius repudiandae veniam, eaque est, velit, nulla ducimus molestias? 
-          Laudantium sunt at itaque!
-        </p> 
+          <p className="border-2 border-white border-dotted text-white text-center w-3/4 p-2">
+            This is Next.js position
+          </p>
+
+          <a>╰(*°▽°*)╯</a>
+
+        </div>
+        
+      </div>
+      
     </div>
-    
-    </div>
-  )
+  );
 }
