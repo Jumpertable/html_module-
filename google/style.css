@@ -1,105 +1,114 @@
+/* Importing the Roboto font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    font-family:  "Roboto", sans-serif;
+
+/* Apply Roboto font to everything */
+* {
+    font-family: "Roboto", sans-serif;
 }
 
+/* Styling for the whole page */
 body {
-    background: #ffffff;
-    margin:auto;
+    background: #ffffff; /* white background */
+    margin: auto; /* center the body horizontally */
 }
 
-.row1{
-    display: flex;
-    height: 10vh;
-    width: 100vw;
+/* --------- Top Row (Right-aligned items like dots and profile) --------- */
+.row1 {
+    display: flex; /* items are placed in a row */
+    height: 10vh; /* height is 10% of screen height */
+    width: 100vw; /* full width of screen */
     margin: 1em;
-    gap: 2em;
-    justify-content: end;
-    padding-top: 1em;    
+    gap: 2em; /* space between items */
+    justify-content: end; /* push everything to the right */
+    padding-top: 1em;
     padding-right: 2em;
-    font-size: 29px;
+    font-size: 29px; /* size of text/icons inside */
 }
 
-.r1{
+/* Small padding adjustment for text or icon in row1 */
+.r1 {
     padding-top: 0.1em;
 }
 
-.dots{
+/* --------- Dot Menu (like Google's 9-dot icon) --------- */
+.dots {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* dots go to next line if needed */
     width: 26px;
-    height:26px;
-    gap: 4px;
+    height: 26px;
+    gap: 4px; /* space between the dots */
     margin-top: 15px;
 }
 
-.dots span{
-    display: flex;    
+/* Individual dot styling */
+.dots span {
+    display: flex;
     width: 6px;
     height: 6px;
-    border-radius: 50%;
-    background-color: rgb(75, 72, 72);
-    
+    border-radius: 50%; /* makes it a circle */
+    background-color: rgb(75, 72, 72); /* dark gray */
 }
 
-.pro-img{
+/* --------- Profile Image --------- */
+.pro-img {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    border: 2px solid #f5f1f1;
+    border-radius: 50%; /* makes it circular */
+    border: 2px solid #f5f1f1; /* light border */
 }
 
-.goog{
+/* --------- Google Logo Section (Centering it) --------- */
+.goog {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 30vh; /* takes up 30% of screen height */
 }
 
-.row2{
+/* --------- Search Bar Container --------- */
+.row2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(75, 72, 72);
-    border-radius: 75px 75px;
-    gap:2em;
-    margin: 1em auto;
+    justify-content: space-between; /* space between items inside */
+    align-items: center; /* center vertically */
+    border: 2px solid rgb(75, 72, 72); /* dark gray border */
+    border-radius: 75px 75px; /* fully rounded ends */
+    gap: 2em;
+    margin: 1em auto; /* center horizontally with margin */
     max-width: 90em;
-    width: 90em;    
-    
-
-    justify-content: space-between;
-    
+    width: 90em; /* limits size to 90em */
 }
 
-.row3{
+/* --------- Buttons Below Search Bar --------- */
+.row3 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 23px;
-    gap: 40px;
+    gap: 40px; /* space between buttons */
 }
 
-button{
-    background: #f0f2f1;
+/* Button styling */
+button {
+    background: #f0f2f1; /* light gray background */
     padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 26px;
-  margin: 4px 2px;
-  cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    cursor: pointer; /* makes the cursor a pointer on hover */
 }
 
-.row4{
+/* --------- Text at the Bottom --------- */
+.row4 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    
-
 }
-.blue{
+
+/* Blue colored text (e.g. links) */
+.blue {
     color: blue;
-    font-weight: 20px;
+    font-weight: bold;
 }

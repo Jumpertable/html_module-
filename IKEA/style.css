@@ -1,54 +1,48 @@
-/* This removes any default spacing that browsers add */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* This sets the whole page to use a grid and centers things */
 body {
   display: grid;
-  place-items: center; /* centers everything */
-  grid-template-columns: 2fr 1fr; /* page split: 2 parts wide, 1 part narrow */
+  place-items: center;
+  grid-template-columns: 2fr 1fr;
 }
 
-/* This is your main container for content */
 .container {
   display: grid;
-  grid-template-columns: 200px 100px; /* 2 columns: one wider than the other */
-  height: 100vh; /* takes full screen height */
-  width: 120vh;  /* sets how wide it is */
+  grid-template-columns: 200px 100px;
+  height: 100vh;
+  width: 120vh;
 }
 
-/* This is for a background area */
 .background {
   background-size: cover;
+  height: 120vh;
   width: 125vh;
 }
 
-/* Custom font: loading it from a file (if available) */
 @font-face {
   font-family: "FuturaExtraBold";
   src: url("path-to-your-font/FuturaExtraBold.woff2") format("woff2"),
-       url("path-to-your-font/FuturaExtraBold.woff") format("woff");
+    url("path-to-your-font/FuturaExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
-/* IKEA logo styles: very big, bold, yellow text with shadow */
 .ikea-logo {
   display: grid;
-  grid-template-columns: auto auto; /* places letters side by side */
+  grid-template-columns: auto auto;
   font-family: "Noto Sans ExtraCondensed", sans-serif;
   font-weight: 800;
   font-size: 180px;
-  color: #ffc72c; /* bright yellow */
-  padding: 5px;
+  color: #ffc72c;
+  padding: 5px 5px;
   border-radius: 5px;
-  text-shadow: 1px 1px 0 #000; /* black shadow */
+  text-shadow: 1px 1px 0 #000;
 }
 
-/* Small text that appears under the logo maybe */
 #copy {
   padding-top: 50px;
   font-size: 0.2em;
@@ -56,19 +50,17 @@ body {
   text-shadow: 1px 1px 0 #000;
 }
 
-/* This text is placed somewhere lower down the screen */
 .row1 {
   display: grid;
   position: absolute;
-  transform: translate(60%, 700%); /* pushes it down and right */
+  transform: translate(60%, 700%);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: aliceblue;
   font-size: 30px;
   text-shadow: 1px 1px 0 #000;
-  white-space: nowrap; /* keeps it all on one line */
+  white-space: nowrap;
 }
 
-/* This is like a highlighted box with text and a button inside */
 .line1 {
   display: grid;
   position: absolute;
@@ -77,15 +69,18 @@ body {
   width: 20em;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-  background: linear-gradient(to right, #ffd700 5px, rgba(235, 233, 196, 0.776) 50%);
+  background: linear-gradient(
+    to right,
+    #ffd700 5px,
+    rgba(235, 233, 196, 0.776) 50%
+  );
   padding: 10px 80px 10px 10px;
   text-shadow: 1px 1px 0 #000;
-  transform: translate(65%, 900%); /* places it far down the page */
+  transform: translate(65%, 900%);
 }
 
-/* Style for the button inside the yellow box */
 button {
-  background-color: #ffd700; /* yellow */
+  background-color: #ffd700;
   text-shadow: 1px 1px 0 #000;
   border-radius: 60px;
   color: aliceblue;
@@ -98,12 +93,10 @@ button {
   font-weight: bold;
 }
 
-/* Changes color when you hover (move your mouse) over the button */
 button:hover {
-  background-color: #9e7807; /* darker yellow */
+  background-color: #9e7807;
 }
 
-/* Style for the text inside the yellow box */
 .line1 span {
   color: aliceblue;
   text-align: center;
@@ -111,32 +104,28 @@ button:hover {
   font-size: 15px;
 }
 
-/* Another content container, for smaller boxes maybe */
 .container2 {
   color: aliceblue;
   display: grid;
-  grid-template-rows: minmax(100px, auto); /* row that grows if needed */
-  gap: 9px; /* space between rows */
+  grid-template-rows: minmax(100px, auto);
+  gap: 9px;
   max-height: 100vh;
-  justify-content: end; /* pushes content to the right */
+  justify-content: end;
 }
 
-/* Each box inside .container2 */
 .box {
   position: relative;
   display: grid;
-  padding: 1em;
+  padding: 1em 1em auto;
   object-fit: cover;
 }
 
-/* Images inside each box */
 .box img {
   width: 100%;
   border-radius: 1em;
   height: 12.3em;
 }
 
-/* Text that appears on top of each image */
 .box span {
   position: absolute;
   top: 1.2em;
@@ -147,16 +136,12 @@ button:hover {
   padding: 5px 10px;
 }
 
-/* ----------- MOBILE VIEW (small screens) ----------- */
 @media screen and (max-width: 700px) {
-  
-  /* Page layout changes to a single column */
   body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
   }
 
-  /* Main container gets smaller and centered */
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -166,7 +151,6 @@ button:hover {
     justify-items: center;
   }
 
-  /* Background image adjusts to fit better on mobile */
   .background {
     height: 115%;
     width: 100%;
@@ -174,13 +158,11 @@ button:hover {
     background-position: center;
   }
 
-  /* IKEA logo gets smaller and shifts up */
   .ikea-logo {
     margin-top: -6em;
     font-size: 100px;
   }
 
-  /* Text near the logo shifts up */
   .row1 {
     position: static;
     font-size: 30px;
@@ -188,25 +170,23 @@ button:hover {
     text-align: center;
   }
 
-  /* Button hover color changes on mobile */
   button:hover {
     background-color: #e08b45;
   }
 
-  /* Yellow box gets repositioned */
   .line1 {
     transform: translate(0em, 23.9em);
   }
 
-  /* The image box section changes into vertical rows */
   .container2 {
     grid-row: 2 / span 4;
     display: grid;
     grid-template-rows: repeat(4, 200px);
   }
 
-  /* Text order might change, useful if needed */
   .text {
-    order: -1; /* moves to the top */
+    /* position: absolute; */
+    order: -1;
+    /* margin-bottom: 10px; */
   }
 }
