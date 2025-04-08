@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import ProductItem from "../components/ProductItem";
 
 export default function Products() {
