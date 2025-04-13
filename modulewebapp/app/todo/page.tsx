@@ -12,7 +12,7 @@ export default function Todo() {
     ])
 
     const [task, setTask] = useState('')
-    const [editId, setEditId] = useState(-1)
+    const [editId, setEditId] = useState(0)
 
     const addTask = () => {
         if (!task) return
