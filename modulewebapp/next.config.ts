@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
         hostname: 'avatars.githubusercontent.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'https://dummyjson.com/carts?limit=3',
+        pathname: '/**',
+      },
     ],
   },
 };
